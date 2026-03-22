@@ -232,6 +232,7 @@ def update_config_settings(args, config):
                 + "ASSERT_ACTIVE_FILAMENT ID={{id}}{% endif %}"
             ],
             "pressure_advance": ["{{extra.pressure_advance|default(0)|float}}"],
+            "filament_flow_rate": : ["{{extra.filament_flow_rate|default(0)|float}}"],            
             "filament_vendor": ["{{vendor.name}}"],
             "name": "{% if spool.id %}{{name}} - {{spool.id}}{% else %}{{name}}{% endif %}",
             "nozzle_temperature": ["{{settings_extruder_temp|int}}"],
